@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+//import { createContext, useContext, useState, useReducer } from "react";
+//import NameReducer from "./components/NameReducer";
+import Todos from "./components/Todos";
+
+import "./App.css";
+// import AddNums from "./components/AddNums";
+
+// export const DataContext = createContext();
+
+// const initialState = {
+//   name: "Tony",
+// };
 
 function App() {
+  //const [state, dispatch] = useReducer(NameReducer, initialState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Todos />
+    </>
   );
 }
 
