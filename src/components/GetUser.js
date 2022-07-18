@@ -1,10 +1,10 @@
 //@flow
 
-import React from "react";
+import * as React from "react";
 import useFetch from "./useFetch";
 import Child from "./Child";
 
-function GetUser(): React$Element<*> {
+function GetUser(): React$Element<"div"> {
   const url = "https://randomuser.me/api/";
   const { data, error } = useFetch(url);
 

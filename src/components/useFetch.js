@@ -1,8 +1,19 @@
+//@flow
+
 import { useState, useEffect } from "react";
 
 //Custom hook to fetch data from an API
 
-function useFetch(url) {
+type Data = {
+  data: Results | null,
+  error: string | null,
+};
+
+type Results = {
+  results: {},
+};
+
+function useFetch(url: string): Data {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
